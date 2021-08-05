@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitos NTI</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    label {
+      cursor: pointer;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+<form action="#" method="get" target="_blank" autocomplete="off">
+  <p>Formulario</p>
+  <p>
+    <label>Nome:</label>
+    <input type="text" id="nome" name="nome" 
+    placeholder="Digite o nome" required>  
+  </p>
+
+  <p>
+    <label for="email">Seu e-mail</label>
+    <input type="email" id="email" name="email" 
+    placeholder="Ex.: email@email.com" required>
+  </p> 
+
+  <p>
+    <label for="phone">Telefone</label>
+    <input type="phone" id="phone" name="phone" 
+    placeholder="Ex.: (71) 99109-0323" 
+    pattern="[0-9]{(2)}-[0-9]{5}-[0-9]{4}" required>
+  </p> 
+
+
+  <p>
+    <label for="textarea">Digite uma mensagem:</label>
+    <textarea name="textarea" id="textarea"></textarea>
+  </p>
+
+  <p>
+    <button type="reset">Apagar</button>
+    <button type="submit">Enviar</button>
+  </p>
+
+</form>
+</body>
+</html>
